@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .li {
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+    </style>
+
+</head>
+
+<body class="p-4">
+
+    <header>
+        <div class="form-control w-full max-w-xs mx-auto mb-7">
+            <label class="label">
+                <span class="label-text">Search your product</span>
+                <span class="label-text-alt">Press <kbd class="kbd kbd-sm">Enter</kbd></span>
+            </label>
+            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs "
+                id="search-field" />
+                <button class="btn btn-primary " onclick="searchFood()">search</button>
+
+        </div>
+    </header>
+    <progress class="progress w-full hidden" id="search-progress"></progress>
+    <!-- no results found -->
+    <section id="no-results">
+
+    </section>
+    <main>
+        <section>
+            <h2 class="text-2xl text-center fw-bold text-orange-600">My Meals</h2>
+            <div id="meal-container" class="grid grid-cols-4 gap-4  mx-auto">
+
+                <!-- <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- The button to open modal -->
+    <!-- <label for="my-modal-4" class="btn modal-button">open modal</label> -->
+    <script src="js.js"></script>
+    <div>
+        <input type="checkbox" id="my-modal-4" class="modal-toggle" />
+        <label for="my-modal-4" class="modal cursor-pointer">
+            <label class="modal-box relative" for="">
+                <!-- <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+        <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p> -->
+                <div id="modal-body">
+                    <!-- <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+            <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p> -->
+                </div>
+            </label>
+        </label>
+    </div>
+
+
+
+</body>
+
+</html>
